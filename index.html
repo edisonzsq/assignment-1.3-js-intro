@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Temperature converter</title>
+        <script src="./converter.js"></script>
+        <script>
+            function handleConvert(){
+                const celsius = document.querySelector("#celsius").value;
+                const result = convert(parseInt(celsius));
+                alert(`Celsius: ${result.celsius}, Fahrenheit: ${result.fahrenheit}, Kelvin:${result.kelvin}`);
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            Celsius: <input type='text' id='celsius' /> <button onClick="handleConvert()">Convert</button>
+        </div>
+    </body>
+</html>
